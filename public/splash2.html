@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/cover.css" type="text/css" />
+  </head>
+  <body>
+   <div class="site-wrapper">
+
+      <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">Cover</h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+<svg
+  version="1.1"
+  width="300px" height="700px"
+  viewBox="0 0 300 700"
+  preserveAspectRatio="xMidYMax slice"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Define star objects here. -->
+<g transform="translate(1.000, 1.000)">
+<path d="M161.250 4.91 L-0.014 -0.12 L17.975 44.67 L178.787 37.22 L330.559 44.67 L347.824 -0.12 L161.250 4.91 Z" fill="#E4522A"/>
+<g stroke="#FFFBE1">
+<path d="M275.89 25.53 L290.71 25.53 L287.55 20.31 L321.9 20.31 "/>
+<path d="M276.55 22.54 L291.36 22.54 L288.2 17.33 L322.56 17.33 "/></g>
+<g stroke="#FFFBE1"><path d="M72.76 25.53 L57.94 25.53 L61.1 20.31 L26.75 20.31 "/>
+    <path d="M72.1 22.54 L57.29 22.54 L60.45 17.33 L26.09 17.33 "/></g>
+    </g>
+  </defs>
+  <style type="text/css">
+    .star1    { fill: #95a8b1; }
+    .star2   { fill: #e4522a; }
+    .star3 { fill: #fffbe1; }
+  </style>
+  <rect x="0" y="0" width="100%" height="100%" fill="#263740" />
+  <g id="starfield">
+    <!-- Use stars objects here. -->
+    <use xlink:href="#star1" transform="translate(10,10) scale(1.0)" class="star" />
+<use xlink:href="#start2" transform="translate(30,20) scale(1.0)" class="burst" />
+<use xlink:href="#start3" transform="translate(60,10) scale(1.5)" class="steeler" />
+  </g>
+  <script type="text/ecmascript">
+    <!-- Dynamically create stars here. -->
+    var xmlns = "http://www.w3.org/2000/svg",
+    xlinkns = "http://www.w3.org/1999/xlink";
+var width  = 300,
+    height = 700;
+var starfield = document.getElementById("starfield");
+function randomBase(min, max) {
+  return Math.random() * (max - min) + min;
+}
+function randomPos(max) {
+  return Math.floor(randomBase(-50, max+50));
+}
+function randomScale(min, max) {
+  return parseFloat(randomBase(min, max).toFixed(2));
+}
+function randomScaleNamed(name) {
+  var scale;
+  switch(name) {
+  case 'star': scale = randomScale(0.3, 0.8); break;
+  case 'burst': scale = randomScale(0.4, 0.9); break;
+  case 'steeler': scale = randomScale(1.1, 2.0); break;
+  default: scale = 1.0; }
+  return scale;
+}
+function addElement(name) {
+  var g   = document.createElementNS(xmlns, "g"),
+      use = document.createElementNS(xmlns, "use"),
+      t   = 'translate(' + randomPos(width) + ',' + randomPos(height) + ') ' +
+            'scale(' + randomScaleNamed(name) + ')';
+  use.setAttributeNS(null, "class", name);
+  use.setAttributeNS(xlinkns, "xlink:href", "#" + name);
+  g.setAttributeNS(null, "transform", t);
+  g.appendChild(use);
+  starfield.appendChild(g);
+}
+function addElements(name, count) {
+  while (count -= 1) { addElement(name); }
+}
+
+addElements('steeler', 15);
+addElements('burst', 15);
+addElements('star', 50);
+  </script>
+  
+</svg>
+
+          <div class="inner cover">
+            
+            <h1 class="cover-heading">Cover your page.</h1>
+            <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+            <p class="lead">
+              <a href="#" class="btn btn-lg btn-default">Learn more</a>
+            </p>
+          </div>
+
+          <div class="mastfoot">
+            <div class="inner">
+              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- script src="../../assets/js/ie10-viewport-bug-workaround.js"></script -->
+  </body> 
+</html>
