@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap4-samples",
+  "version": "1.0.0",
+  "description": "Bootstrap4 samples",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxai/bootstrap4-samples.git"
+  },
+  "keywords": [
+    "bootstrap4"
+  ],
+  "author": "Pello Altadill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pxai/bootstrap4-samples/issues"
+  },
+  "homepage": "https://github.com/pxai/bootstrap4-samples#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2"
+  }
+}
