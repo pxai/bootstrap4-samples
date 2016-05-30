@@ -28,16 +28,28 @@ html,
 body {
   height: 100%;
   background-color: #263740;
-    background-image: url('../img/planet.png');
-  background-repeat: no-repeat;
-  background-position: bottom -10% left -10%;
-  background-size: 20%;
 }
 body {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
+
+#planet {
+  background-image: url('../img/planet.png');
+  background-repeat: no-repeat;
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  border: 1px solid black;
+  background-position: top 0% left -10%;
+  /*background-position: top -10% left -10%;*/
+  background-size: 15%;
+  z-index: 2;
+}
+
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -52,7 +64,8 @@ body {
   display: table-cell;
   vertical-align: top;
 }
-.cover-container {
+
+#headertitle {
   margin-right: auto;
   margin-left: auto;
   background-image: url('../img/rocket.png');
@@ -150,6 +163,7 @@ body {
     position: fixed;
     bottom: 0;
   }
+
   /* Start the vertical centering */
   .site-wrapper-inner {
     vertical-align: middle;
@@ -157,6 +171,7 @@ body {
   /* Handle the widths */
   .masthead,
   .mastfoot,
+  .mainpanel
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
@@ -165,7 +180,13 @@ body {
 @media (min-width: 992px) {
   .masthead,
   .mastfoot,
+  .mainpanel,
   .cover-container {
     width: 700px;
+  }
+  
+  .mainpanel {
+      border: 1px solid black;
+      margin: 0 auto;
   }
 }

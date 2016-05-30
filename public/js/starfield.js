@@ -1,8 +1,16 @@
 
     var xmlns = "http://www.w3.org/2000/svg",
     xlinkns = "http://www.w3.org/1999/xlink";
-var width  = 800,
-    height = 700;
+    var w = window,
+    d = document,
+    e = d.documentElement,
+    g = d.getElementsByTagName('body')[0],
+    width = w.innerWidth || e.clientWidth || g.clientWidth,
+    height = w.innerHeight|| e.clientHeight|| g.clientHeight;
+    
+    console.log(width + ' ' + height);
+//var width  = 1024,
+//    height = 800;
 var starfield = document.getElementById("starfield");
 function randomBase(min, max) {
   return Math.random() * (max - min) + min;
