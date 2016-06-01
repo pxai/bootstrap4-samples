@@ -3,6 +3,7 @@
   <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8">
+    <title>Artean Bolsa de empleo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -92,18 +93,34 @@
 
           <div class="mastfoot">
             <div class="inner">
-              <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+              <p>Cover template based on <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>, adapted and randomly star-studed sky by <a href="https://twitter.com/mdo">@pelloxabier</a>. Icons made by <a href="http://www.freepik.com">Freepik</a> from <a href="http://www.flaticon.com">flaticon</a> </p>
             </div>
           </div>
             
                   <div class="inner cover mainpanel" id="candidatos">
-                   <h2 class="cover-heading">Candidatos</h2>
+                      
+                   <h2 class="cover-heading">Candidat@s</h2>
+                   <img src="img/astronaut.png" alt="darest candidates" title="fearless candidate">
                     <p class="lead">Entra en tu perfil o crea una cuenta en Artean indicando tu email</p>
+                    <form method="post" name="applicant" action="/artean/arteans/web/app_dev.php/artean/applicant/signin/save">
+        <div id="applicant_sign_in">
+            <div class="col-lg-offset-3 col-lg-6">
+                <div class="input-group">
+                    <input class="form-control" type="email" id="applicant_sign_in_email" name="applicant_sign_in[email]" required="required" placeholder="tudirección@decorreo" />
+                    <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button" onclick="forms.applicant.submit()" >Entrar</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--button type="submit" id="applicant_sign_in_save" name="applicant_sign_in[save]">Alta en Artean</button></div><input type="hidden" id="applicant_sign_in__token" name="applicant_sign_in[_token]" value="dGrOXtN830u2L9kHR4r__oHOjd4uWEXW1syCgIqwYkY" /--></div>
+</form>
             </div>
 
             <div class="inner cover mainpanel" id="empresas">
                    <h2 class="cover-heading">Empresas</h2>
-                    <p class="lead">Si eres una empresa puedes iniciar un proceso de selección o bien publicar una oferta de empleo que llegue a nuestros candidatos.</p>
+                   <img src="img/company.png" alt="Join us, and together we will rule the galaxy" title="Companies are welcome">
+                    <p class="lead">Si eres una empresa puedes iniciar un proceso de selección o bien publicar una oferta de empleo que llegue a nuestr@s candidat@s.</p>
                        <p class="lead">
              <a href="#candidatos"  class="btn btn-lg btn-success-outline">Solicitud a bolsa</a>
              <a href="#"  class="btn btn-lg btn-warning-outline">Publicar oferta</a>
