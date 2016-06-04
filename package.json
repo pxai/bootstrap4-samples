@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/pxai/bootstrap4-samples#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.2"
+    "bootstrap": "^4.0.0-alpha.2",
+    "fontawesome": "^4.5.0"
   }
 }
